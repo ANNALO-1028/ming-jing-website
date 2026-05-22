@@ -1,11 +1,13 @@
 export default function Hero() {
   return (
+    <>
+      <style>{`
+        .hero-section { background-image: url('/phone-banner.png'); background-position: center; }
+        @media (min-width: 768px) { .hero-section { background-image: url('/hero-bg.png'); background-position: center; } }
+      `}</style>
     <section
-      className="hero-bg relative min-h-screen flex items-end pt-16"
-      style={{
-        backgroundImage: "url('/hero-bg.png')",
-        backgroundSize: "cover",
-      }}
+      className="hero-section relative min-h-screen flex items-end pt-16"
+      style={{ backgroundSize: "cover" }}
     >
       {/* 極淡遮罩，保留底圖文字清晰度 */}
       <div
@@ -33,5 +35,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }
