@@ -27,3 +27,13 @@ h1, h2, h3, h4 {
   font-family: var(--font-noto-serif-tc), "Noto Serif TC", serif;
   font-weight: 300;
 }
+
+.hero-bg {
+  background-position: left center;
+}
+
+@media (min-width: 768px) {
+  .hero-bg {
+    background-position: center center;
+  }
+}

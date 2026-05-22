@@ -1,11 +1,10 @@
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-end pt-16"
+      className="hero-bg relative min-h-screen flex items-end pt-16"
       style={{
         backgroundImage: "url('/hero-bg.png')",
         backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
       {/* 極淡遮罩，保留底圖文字清晰度 */}
