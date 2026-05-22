@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <>
       <style>{`
-        .hero-section { background-image: url('/phone-banner.png'); background-position: center; }
+        .hero-section { background-image: url('/phone-banner.png'); background-position: left center; }
         @media (min-width: 768px) { .hero-section { background-image: url('/hero-bg.png'); background-position: center; } }
       `}</style>
     <section
